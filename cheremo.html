@@ -1,132 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Japhet Cheremo | Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    html { scroll-behavior: smooth; }
-    body { transition: background-color 0.5s, color 0.5s; }
-    .dark-mode { background-color: #1a202c; color: #f7fafc; }
-    .skill-btn { padding: 1rem; border-radius: 0.5rem; font-weight: bold; text-align: center; transition: transform 0.3s, background-color 0.3s; color: white; background-color: #3b82f6; }
-    .skill-btn:hover { transform: scale(1.1); background-color: #2563eb; }
-    .social-icon { width: 2rem; height: 2rem; margin: 0 0.5rem; transition: transform 0.3s; }
-    .social-icon:hover { transform: scale(1.2); }
-    .project-card { transition: transform 0.3s, box-shadow 0.3s; }
-    .project-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Japhet Cheremo | Software Engineer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans transition-colors duration-500">
+<body>
 
-<div class="fixed top-4 right-4 z-50">
-  <button id="theme-toggle" class="bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-white px-4 py-2 rounded">Toggle Mode</button>
-</div>
-
-<header class="bg-blue-600 text-white h-screen flex flex-col justify-center items-center">
-  <div class="w-40 h-40 mb-4 rounded-full bg-gray-200 overflow-hidden">
-    <img src="jf.jpg" alt="Profile" class="w-full h-full object-cover">
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <h1 class="logo">Japhet Cheremo</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </div>
-  <h1 class="text-5xl font-bold mb-4">Japhet Cheremo</h1>
-  <p class="text-xl mb-4">Software Engineer</p>
-
-  <div class="flex justify-center mb-6">
-    <a href="https://www.tiktok.com/@japhet.cheremo" target="_blank" class="social-icon">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Tiktok-logo.svg" alt="TikTok">
-    </a>
-    <a href="https://www.facebook.com/profile.php?id=61564247063691" target="_blank" class="social-icon">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook">
-    </a>
-    <a href="https://x.com/JaphetCheremo" target="_blank" class="social-icon">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/X-logo.svg" alt="X">
-    </a>
-    <a href="https://github.com/japhetcheremo-cloud" target="_blank" class="social-icon">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
-    </a>
-  </div>
-
-  <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">Contact Me</a>
 </header>
 
-<section id="about" class="py-20 px-6 max-w-4xl mx-auto">
-  <h2 class="text-3xl font-bold mb-6">About Me</h2>
-  <p class="mb-4">I am a professional software engineer with experience in building responsive, high-quality web applications and websites for businesses and personal projects.</p>
-  <p>Skilled in HTML, CSS, JavaScript, React, Tailwind, Node.js, Python, and Git/GitHub. I focus on delivering modern, professional, and functional software solutions.</p>
-</section>
-
-<section id="skills" class="py-20 bg-gray-200 px-6">
-  <h2 class="text-3xl font-bold mb-6 text-center">Skills</h2>
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-    <div class="skill-btn">HTML</div>
-    <div class="skill-btn">CSS</div>
-    <div class="skill-btn">JavaScript</div>
-    <div class="skill-btn">React</div>
-    <div class="skill-btn">Node.js</div>
-    <div class="skill-btn">Tailwind</div>
-    <div class="skill-btn">Python</div>
-    <div class="skill-btn">Git/GitHub</div>
+<!-- Hero / About Me -->
+<section id="about" class="hero container">
+  <div class="hero-image">
+    <img src="jf.jpg" alt="Japhet Cheremo" class="profile-img">
   </div>
-</section>
-
-<section id="projects" class="py-20 px-6 max-w-5xl mx-auto">
-  <h2 class="text-3xl font-bold mb-6 text-center">Projects</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div class="bg-white rounded shadow p-4 project-card">
-      <img src="jf.jpg" alt="Project 1" class="rounded mb-4">
-      <h3 class="text-xl font-semibold mb-2">Business Landing Page</h3>
-      <p class="mb-2">A modern landing page for small businesses with interactive features.</p>
-      <a href="#" class="text-blue-600 hover:underline">Live Demo</a> | <a href="#" class="text-blue-600 hover:underline">GitHub</a>
-    </div>
-    <div class="bg-white rounded shadow p-4 project-card">
-      <img src="jf.jpg" alt="Project 2" class="rounded mb-4">
-      <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
-      <p class="mb-2">Responsive personal portfolio showcasing projects, skills, and contact form.</p>
-      <a href="#" class="text-blue-600 hover:underline">Live Demo</a> | <a href="#" class="text-blue-600 hover:underline">GitHub</a>
+  <div class="hero-text">
+    <h2>Hello, I'm Japhet Cheremo</h2>
+    <h3>Software Engineer | Full-Stack Developer</h3>
+    <p>
+      I build modern, scalable, and high-performance web applications.
+      Skilled in JavaScript, Python, React, Node.js, and Django.
+      Passionate about solving real-world problems with technology.
+    </p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="japhetcheremo@gmail.com" class="btn-outline">Hire Me</a>
     </div>
   </div>
 </section>
 
-<section id="contact" class="py-20 bg-blue-600 text-white px-6">
-  <h2 class="text-3xl font-bold mb-6 text-center">Contact Me</h2>
-  <div class="max-w-2xl mx-auto">
-    <form action="mailto:your-email@example.com" method="POST" class="flex flex-col gap-4">
-      <input type="text" name="name" placeholder="Your Name" required class="p-3 rounded text-gray-800">
-      <input type="email" name="email" placeholder="Your Email" required class="p-3 rounded text-gray-800">
-      <textarea name="message" placeholder="Your Message" required class="p-3 rounded text-gray-800"></textarea>
-      <button type="submit" class="bg-white text-blue-600 font-bold py-3 rounded hover:bg-gray-200">Send Email</button>
-    </form>
-    <div class="mt-6 text-center">
-      <a href="https://wa.me/0719678760" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded font-bold mt-4">WhatsApp Me</a>
-    </div>
+<!-- Skills -->
+<section id="skills" class="container section">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill">HTML5</div>
+    <div class="skill">CSS3</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">React</div>
+    <div class="skill">Python / Django</div>
+    <div class="skill">Node.js</div>
+    <div class="skill">Git & GitHub</div>
+    <div class="skill">SQL / MySQL</div>
   </div>
 </section>
 
-<footer class="bg-gray-800 text-white py-6 text-center">
-  <div class="flex justify-center gap-6 mb-4">
-    <a href="https://www.tiktok.com/@japhet.cheremo" target="_blank" class="social-icon">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Tiktok-logo.svg" alt="TikTok">
-    </a>
-    <a href="https://www.facebook.com/profile.php?id=61564247063691" target="_blank" class="social-icon">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook">
-    </a>
-    <a href="https://x.com/JaphetCheremo" target="_blank" class="social-icon">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/X-logo.svg" alt="X">
-    </a>
-    <a href="https://github.com/japhetcheremo-cloud" target="_blank" class="social-icon">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
-    </a>
+<!-- Projects -->
+<section id="projects" class="container section">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <img src="jf.jpg" alt="Project 1">
+      <h3>Hope believers ministry church .com</h3>
+      <p>Responsive church website with events, sermons, and member engagement.</p>
+      <a href="https://japhetcheremo-cloud.github.io/hope-belivers-ministry/" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <img src="jf.jpg" alt="Project 2">
+      <h3>Student Management System</h3>
+      <p>System to manage student records, grading, and reports efficiently.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="jf.jpg" alt="Project 3">
+      <h3>Healthcare Queue Solution</h3>
+      <p>Concept to reduce hospital queues and digitize patient records.</p>
+    </div>
+
   </div>
-  <p>&copy; 2025 Japhet Cheremo. All rights reserved.</p>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="container section">
+  <h2 class="section-title">Contact</h2>
+  <p>Email: <b>japhetcheremo@gmail.com</b></p>
+  <p>Phone: <b>+254719678760</b></p>
+  <p>GitHub: <b>github.com/japhetcheremo-cloud</b></p>
+  <p>
+    <a class="btn-primary" href="mailto:youremail@example.com">Send Email</a>
+    <a class="btn-outline" href="https://wa.me/254719678760">WhatsApp Me</a>
+  </p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Japhet Cheremo — Software Engineer</p>
 </footer>
 
-<script>
-  const toggleBtn = document.getElementById('theme-toggle');
-  toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    toggleBtn.textContent = document.body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
-  });
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
+
 
